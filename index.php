@@ -1,6 +1,6 @@
 <?php
 
-//include 'dataminingtool.php';
+//include 'dataconvergencetool.php';
 include 'GlobalVariables.php';
 session_start();
 //$tLoginPeriod = $tLoginPeriod + $_SESSION['timeout'] + 1 * 60;
@@ -16,9 +16,9 @@ if(isset($_SESSION['myusername']) AND ($tIdleTimeActual < $tIdleTimeSet))
 //update the time
 $_SESSION['timestamp']=time();
 
-header( 'Location: dataminingtool.php' ) ;
-//header( 'Location: http://tc001423/dataminingtool/dataminingtool.php' ) ;
-//header( 'Location: http://hy201440/smidct/dataminingtool.php' ) ;
+header( 'Location: dataconvergencetool.php' ) ;
+//header( 'Location: http://tc001423/dataconvergencetool/dataconvergencetool.php' ) ;
+//header( 'Location: http://hy201440/smidct/dataconvergencetool.php' ) ;
 }
 else
 {
@@ -56,8 +56,8 @@ else
 <td>
 <!--Author - Ragavendra BN -->
 <center>Questions email - 
-<a href="mailto:ragavendra.nagraj@bchydro.com?Subject=SMI - CGR Memory Monitor" target="_top">
-ragavendra.nagraj@bchydro.com</a></center>
+<a href="mailto:user@afcemail.com?Subject=Data Convergence Tool" target="_top">
+user@afcemail.com</a></center>
 </td>
 </center>
 </br></br>

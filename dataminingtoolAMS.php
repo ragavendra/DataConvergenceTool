@@ -20,22 +20,6 @@ session_start();
 
 $tIdleTimeActual=time()-$_SESSION['timestamp'];
 
-//echo $tIdleTimeActual;
-//echo (time()-$_SESSION['timestamp']);
-
-//if(time()-$_SESSION['timestamp'] > $idletime){
- //   $_SESSION['timestamp']=time();
-//}
-//else {
- //   session_destroy();
- //   session_unset();
-//}
-
-//on session creation
-//$_SESSION['timestamp']=time();
-
-//if((isset($_SESSION['myusername'])) AND (time() < $tLoginPeriod))
-
 if(isset($_SESSION['myusername']) AND ($tIdleTimeActual < $tIdleTimeSet))
 {
 
@@ -69,7 +53,7 @@ $().ready(function() {
 
 </script>
 <p class="home">
-<A HREF = dataminingtool.php>Home</A>
+<A HREF = dataconvergencetool.php>Home</A>
 </p>
 <p class="logout">
 <A HREF = PasswordReset.php>Password Reset</A>
@@ -77,12 +61,12 @@ $().ready(function() {
 <p class="logout">
 <A HREF = logout.php>Log out</A>
 </p>
-<title>SMI Data Mining Tool - SMI BCHydro - ADCS-MDMS only</title>
-<h1>SMI Data Mining Tool - SMI BCHydro (Beta) - ADCS-MDMS only</h1>
+<title>Data Convergenc Tool - AFCE - ADCS-MDMS only</title>
+<h1>Data Convergence Tool - AFCE (Beta) - ADCS-MDMS only</h1>
 </head>
 <body>
 <p class="medium">
-<form name="DataMiningTool" method="post" action="querytestAMS.php" onsubmit="return validateForm()">
+<form name="dataconvergencetool" method="post" action="querytestAMS.php" onsubmit="return validateForm()">
 
 <table border="0">
 <tr>
@@ -93,7 +77,7 @@ $().ready(function() {
 
 <tr>
 <td>CGR: </td><td><input type="text" size="8" maxlength="8" name="CGR" id="CGR"></td>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eg. 15379360</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eg. 15339360</td>
 </tr>
 
 <tr>
@@ -135,7 +119,7 @@ $().ready(function() {
 <td></td>
 <td>
 Last SAP QA1 Data Update: 15 July 2013 - 3.00 PM PST
-<script src="DataMiningTool.js"></script>
+<script src="dataconvergencetool.js"></script>
 </td>
 </tr>
 </table>
@@ -143,8 +127,8 @@ Last SAP QA1 Data Update: 15 July 2013 - 3.00 PM PST
 <center>
 <td>
 Author - Ragavendra BN - 
-<a href="mailto:ragavendra.nagraj@bchydro.com?Subject=SMI - CGR Memory Monitor" target="_top">
-ragavendra.nagraj@bchydro.com</a>
+<a href="mailto:user@afcemail.com?Subject=Data Convergence Tool" target="_top">
+user@afcemail.com</a></center>
 </td>
 </center>
 </br></br>

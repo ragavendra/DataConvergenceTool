@@ -6,7 +6,7 @@
 //ini_set('error_log', dirname(__FILE__) . '/error_log.txt'); // change as required
 //debug
 
-//include 'dataminingtool.php';
+//include 'DataConvergenceTool.php';
 include 'GlobalVariables.php';
 session_start();
 //$tLoginPeriod = $tLoginPeriod + $_SESSION['timeout'] + 1 * 60;
@@ -34,7 +34,7 @@ $_SESSION['timestamp']=time();
 <link rel="stylesheet" href="style2.css" type="text/css">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<A HREF = dataminingtool.php>Home</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF = DataConvergenceTool.php>Home</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <p class="logout">
 <A HREF = logout.php>Log out</A>
 </p>
@@ -56,7 +56,7 @@ include 'Functions.php';
 
 //$date = date_create();
 //header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
-//header("Content-Disposition: attachment; filename=DataMiningTool_" . date_timestamp_get($date) . ".xls");  //File name extension was wrong
+//header("Content-Disposition: attachment; filename=DataConvergenceTool_" . date_timestamp_get($date) . ".xls");  //File name extension was wrong
 //header("Expires: 0");
 //header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 //header("Cache-Control: private",false);
@@ -487,7 +487,7 @@ If ($sXLSX == "XLSX")
 
 $date = date_create();
 header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
-header("Content-Disposition: attachment; filename=DataMiningTool_" . date_timestamp_get($date) . ".xls");  //File name extension was wrong
+header("Content-Disposition: attachment; filename=DataConvergenceTool_" . date_timestamp_get($date) . ".xls");  //File name extension was wrong
 header("Expires: 0");
 header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 header("Cache-Control: private",false);

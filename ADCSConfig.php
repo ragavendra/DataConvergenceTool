@@ -3,7 +3,7 @@
 
 require_once 'GlobalVariables.php';
 
-	// Connects to the XE service (i.e. database) on the "SMIMDMTST1" machine
+	// Connects to the XE service (i.e. database) on the "MDMTST1_AFCE" machine
 	$sADCSConn = oci_connect($sADCSUserName, $sADCSUserPass, $sADCSConnStr);
 	if (!$sADCSConn) {
 		$sADCSConnStr = oci_error();

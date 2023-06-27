@@ -162,7 +162,7 @@ font-weight: bold;
 </tr>
 
 </table>
-<a href="dataminingtool.php">Home</a>
+<a href="DataConvergenceTool.php">Home</a>
 </form>
 </BODY>
 </HTML>

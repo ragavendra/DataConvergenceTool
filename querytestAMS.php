@@ -6,7 +6,7 @@
 //ini_set('error_log', dirname(__FILE__) . '/error_log.txt'); // change as required
 //debug
 
-//include 'dataminingtool.php';
+//include 'DataConvergenceTool.php';
 include 'GlobalVariables.php';
 session_start();
 
@@ -31,10 +31,10 @@ $sXLSX=$_POST['XLSX'];
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <p class="home">
-<A HREF = dataminingtool.php>Home</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF = DataConvergenceTool.php>Home</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 <p class="home">
-<A HREF = dataminingtoolAMS.php>ADCS-MDMS only</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF = DataConvergenceToolAMS.php>ADCS-MDMS only</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 <p class="logout">
 <A HREF = logout.php>Log out</A>
@@ -477,7 +477,7 @@ If ($sXLSX == "XLSX")
 
 $date = date_create();
 header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
-header("Content-Disposition: attachment; filename=DataMiningTool_" . date_timestamp_get($date) . ".xls");  //File name extension was wrong
+header("Content-Disposition: attachment; filename=DataConvergenceTool_" . date_timestamp_get($date) . ".xls");  //File name extension was wrong
 header("Expires: 0");
 header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 header("Cache-Control: private",false);

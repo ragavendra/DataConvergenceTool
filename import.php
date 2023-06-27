@@ -1,6 +1,6 @@
      <?php
 	 // here is the function which will help us to call the PHPExcel classe in our pages, you can put it in a file apart.
-    $chemin = '\\bchydro.adroot.bchydro.bc.ca\DATA\SMI\System Wide Test\Automation\Data\Temp';
+    $chemin = '\\afceCo.adroot.afceCo.bc.ca\DATA\SMI\System Wide Test\Automation\Data\Temp';
     set_include_path(get_include_path() . PATH_SEPARATOR . $chemin);//we specify the path" using linux"
     function __autoload($classe)
     {
@@ -17,7 +17,7 @@
     $objetALire = PHPExcel_IOFactory::createReader($fichierType);
     $objetALire->setReadDataOnly(true);
     $objPHPExcel = $objetALire->load($fichierACharger);
-    //echo '<script>alert("le fichier a été chargé avec succes !");</script>';
+    //echo '<script>alert("le fichier a ï¿½tï¿½ chargï¿½ avec succes !");</script>';
     $feuille = $objPHPExcel->getSheet(0);//we specify the sheet to use
     $highestRow = $feuille->getHighestRow();//we select all the rows used in the sheet
     $highestCol = $feuille->getHighestColumn();// we select all the columns used in the sheet

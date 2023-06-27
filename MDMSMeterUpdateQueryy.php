@@ -1,8 +1,8 @@
 <html>
 <head>
 
-<title>SMI - MDMS Meter Update Tool</title>
-<h1>SMI - MDMS Meter Update Too</h1>
+<title>AFCE - MDMS Meter Update Tool</title>
+<h1>AFCE - MDMS Meter Update Too</h1>
 
 </head>
 

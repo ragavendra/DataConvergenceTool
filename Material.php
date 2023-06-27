@@ -4,7 +4,7 @@ $sMeterType = $_GET['q'];
 
 $sMeterT = '';
 
-require_once "DMTConfig.php";
+require_once "DCTConfig.php";
 
 //$sTableName = "sap_qa1";
 $sTableName = "matreg";

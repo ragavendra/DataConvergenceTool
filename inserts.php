@@ -1,7 +1,7 @@
 <?php
 $username="root";
-$password="saraswathi";
-$database="ragu";
+$password="passrd";
+$database="afceDb";
 
 $field1-name=$_POST['field1-name'];
 $field2-name=$_POST['field2-name'];

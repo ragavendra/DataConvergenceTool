@@ -84,10 +84,10 @@ $().ready(function() {
 </script>
 
 <p class="home">
-<A HREF = dataminingtool.php>Home</A>
+<A HREF = dataconvergencetool.php>Home</A>
 </p>
 <p class="home">
-<A HREF = dataminingtoolAMS.php>ADCS-MDMS only</A>
+<A HREF = dataconvergencetoolAMS.php>ADCS-MDMS only</A>
 </p>
 <p class="logout">
 <A HREF = PasswordReset.php>Password Reset</A>
@@ -100,7 +100,7 @@ $().ready(function() {
 </head>
 <body>
 <p class="medium">
-<form name="DataMiningTool" method="post" action="querytest.php" onsubmit="return validateForm()">
+<form name="dataconvergencetool" method="post" action="querytest.php" onsubmit="return validateForm()">
 
 <table border="0">
 <tr>
@@ -191,7 +191,7 @@ $().ready(function() {
 <td></td>
 <td>
 Last SAP QA1 Data Update: 15 July 2013 - 3.00 PM PST
-<script src="DataMiningTool.js"></script>
+<script src="dataconvergencetool.js"></script>
 </td>
 </tr>
 </table>
@@ -199,8 +199,8 @@ Last SAP QA1 Data Update: 15 July 2013 - 3.00 PM PST
 <center>
 <td>
 Author - Ragavendra BN - 
-<a href="mailto:ragavendra.nagraj@bchydro.com?Subject=SMI - CGR Memory Monitor" target="_top">
-ragavendra.nagraj@bchydro.com</a>
+<a href="mailto:user@afcemail.com?Subject=Data Convergence Tool" target="_top">
+user@afcemail.com</a></center>
 </td>
 </center>
 </br></br>
