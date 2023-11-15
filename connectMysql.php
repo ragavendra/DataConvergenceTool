@@ -2,7 +2,7 @@
 
 // connect to the database server and select the appropriate database for use
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$mysqli = new mysqli("localhost", "stops", "Platty20@3", "stopsNearMe");
+$mysqli = new mysqli("localhost", "user", "pwd", "dbName");
 
 //$sTableName = "sap_qa1";
 $sTableName = "stops";

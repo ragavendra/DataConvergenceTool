@@ -52,16 +52,6 @@ $_SESSION['mypassword']=$mypassword;
 //on session creation
 $_SESSION['timestamp']=time();
 
-//put login time here
-//$_SESSION['timeout'] = time();
-
-//  if ($_SESSION['timeout'] + 1 * 60 < time()) {
-     // session timed out
-//  } else {
-     // session ok
-//  }
-
-
 header("location:dataminingtool.php");
 }
 else {

@@ -6,7 +6,6 @@ $sCGR = '';
 
 require_once "ADCSConfig.php";
 
-
 // query the database table for zip codes that match 'term'
 $sSQL = "select DISTINCT cgr.SERIALNUMBER
 from ami.node n, ami.node cgr, AMI.RFLANLINKINFO r
@@ -20,12 +19,12 @@ $r = oci_execute($sADCSConnID);
 if (!$r) {
     $e = oci_error($stid);
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-	echo $e;
+    echo $e;
 }
 
 //$row = mysql_fetch_assoc($sDMTQueryResult);
-while ($ADCSrow = oci_fetch_array($sADCSConnID, OCI_ASSOC+OCI_RETURN_NULLS)){ $sCGR .= $ADCSrow[SERIALNUMBER]."\n"; }
+while ($ADCSrow = oci_fetch_array($sADCSConnID, OCI_ASSOC + OCI_RETURN_NULLS)) {
+    $sCGR .= $ADCSrow[SERIALNUMBER] . "\n";
+}
 
 echo $sCGR;
-
-?>

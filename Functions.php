@@ -2,35 +2,11 @@
 
 Function Pagination($adjacents, $targetpage, $limit, $total_pages)
 {
-	/*
-		Place code to connect to your DB here.
-	*/
-
-	//$tbl_name="sap_qa1";		//your table name
-	// How many adjacent pages should be shown on each side?
-	//$adjacents = 3;
-	
-	//$query = "SELECT COUNT(*) as num FROM $tbl_name";
-	//$total_pages = mysql_fetch_array(mysql_query($query));
-	//$total_pages = $total_pages['num'];
-	
-	//$total_pages = $total_pages['num'];
-	
-	/* Setup vars for query. */
-	//$targetpage = "pagination.php"; 	//your file name  (the name of this file)
-	//$limit = 500; 								//how many items to show per page
-	
 	$page = $_GET['page'];
 	if($page) 
 		$start = ($page - 1) * $limit; 			//first item to display on this page
 	else
 		$start = 0;								//if no page var is given, set start to 0
-	
-	/* Get data. */
-	//$sql = "SELECT * FROM sap_qa1 LIMIT $start, $limit";
-	//$sql = $sDMTQueryResult . " LIMIT $start, $limit";
-	//$sql = $sDMTQueryResult;
-	//$result = mysql_query($sql);
 	
 	/* Setup page vars for display. */
 	if ($page == 0) $page = 1;					//if no page var is given, default to 1.
@@ -121,8 +97,6 @@ Function Pagination($adjacents, $targetpage, $limit, $total_pages)
 		$pagination.= "</div>\n";		
 	}
 	return $pagination;
-	//return $result;
-	//return array($pagination, $result, 3);
 	}
 
 

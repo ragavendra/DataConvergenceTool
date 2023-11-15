@@ -5,24 +5,17 @@ ini_set('error_log', dirname(__FILE__) . '/error_log.txt'); // change as require
 //debug
 
 session_start();
-if(isset($_SESSION['myusername']))
-{
-//	echo "hi";
-//	header("location:indextest.php");
-
-
-
-//session_start();
-//if(!session_is_registered(myusername)){
-//header("location:main_login.php");
+if (isset($_SESSION['myusername'])) {
 
 ?>
 
-<html>
-<body>
-Login Successful
-</body>
-</html>
+    <html>
+
+    <body>
+        Login Successful
+    </body>
+
+    </html>
 
 <?php
 }

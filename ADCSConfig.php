@@ -1,6 +1,5 @@
 <?php
 
-
 require_once 'GlobalVariables.php';
 
 	// Connects to the XE service (i.e. database) on the "MDMTST1_AFCE" machine
