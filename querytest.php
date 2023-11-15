@@ -690,20 +690,6 @@ $_SESSION['sRowExists'] = FALSE;
 
 //$row = mysql_fetch_assoc($sDMTQueryResult);
 while ($row = mysql_fetch_assoc($sDMTQueryResult)) {
-    // Append each fetched row onto $rowset
-    //$row = $rows;
-	//echo $row['Material'];
-//	}
-//while($row = mysql_fetch_array($sDMTQueryResult)) {
-//$row[] = $rows;
-//echo $row['Material'];
-//echo debug_view ( $row);
-//foreach ($rows as $row) {
-
-//while($row) {
-
-//echo "hi";
-//echo $row;
 
   echo "<tr>";
   echo "<td>" . $row['Material'] . "</td>";
